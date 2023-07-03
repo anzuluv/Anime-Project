@@ -1,0 +1,26 @@
+const mongoose = require("mongoose");
+
+const Ave_PLSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    state: {
+        type: String,
+        required: true,
+    },
+    ave_pl: {
+        type: String,
+        required: true,
+    },
+    anime: {
+        type: String,
+        required: true,
+    },
+
+
+})
+
+
+const Ave_PLModel = mongoose.model("Ave_PL", Ave_PLSchema);
+module.exports = Ave_PLModel;

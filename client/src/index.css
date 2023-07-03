@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  body{
+    @apply font-mono;
+  }
+  select {
+    @apply min-w-[150px];
+  }
+
+  .decider{
+    @apply flex justify-around;
+  }
+  
+  input[type="text"]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+  }
+
+  .list-none {
+    list-style-type: none;
+  }
+
+  .container {
+    @apply p-4 w-full text-center bg-white rounded-lg border shadow-md sm:p-8 bg-primary;
+  }
+
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker,
+ summary.list-none::-webkit-details-marker,
+ summary.list-none::marker, .list-none::-webkit-details-marker {
+    display:none;
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #153462;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+}
